@@ -108,7 +108,7 @@ $(document).ready(function () {
         $(".header-links a").each(function () {
           $(this).css("color", "black");
         });
-        $(".header-links").css("background-color", "white");
+        $(".header-links").css("background-color", "");
       }
 
       //using index

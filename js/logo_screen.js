@@ -2,7 +2,10 @@
 
     $(function(){
         $('.nav-brand').click(function(){
-            $('#pop_up').fadeOut(200);
+            $('#logo-screen').fadeIn(200);
+        })
+        $('#logo-screen .close_x').click(function(){
+            $('#logo-screen').fadeOut(200);
         })
     
     

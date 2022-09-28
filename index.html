@@ -15,6 +15,8 @@
 <link rel="stylesheet" type="text/css" href="./css/slick.css">
 <script src="js/jquery-3.1.1.min.js"> </script>
 <script src="js/jquery-migrate-3.0.0.js"></script>  
+<script src="js/logo_screen.js"></script>  
+<script src="js/gallery.js"></script>  
 
 
 <script src="./js/slick.js" type="text/javascript" charset="utf-8"></script>
@@ -36,9 +38,9 @@
   <!-- navbar header -->
   <div class="nav-header">
     <div class="nav-brand">
-      <img src="images/icon_logo.png">
+      <a href="#"><img src="images/icon_logo.png"></a>
     </div>
-    <p class="bars"><img src="images/icon_bars.png"></p>
+    <a href="#"><p class="bars"><img src="images/icon_bars.png"></p></a>
     <!-- <i class="fa fa-bars fa-3x"></i> -->
 
     <div class="header-links">
@@ -71,7 +73,7 @@
 
   <!--home_slider-->
   <div class="logo-screen" id="logo-screen">
-    <p class="close"><img src="images/icon_close.png" alt="닫기"></p>
+    <p class="close_x"><img src="images/icon_close.png" alt="닫기"></p>
     <div class="text-box">
       <div class="name_box">
     <h2 class="name">KIM JEONG Yoon</h2>
@@ -127,37 +129,53 @@
     
     <!-- begin section -->
 
-    <div class="section projects" data-anchor="projects">
-      <div class="content-slide">
-        <div class="slide">
-          <h1 class="wow fadeInDown" data-wow-delay="0.2s">XFAIRE</h1>
+    <div  class="section projects" data-anchor="projects">
+      <div class="content-slide" >
+        <div class="slide slide1">
+          <div class="cont">
+          <div class="img_box">
+              <p class="moniter"><img src="images/sec2_mockup_monitor.png"></p>
+              <p class="phone"><img src="images/sec2_mockup_phone.png"></p>
+          </div>
+          <div class="txt_box">
+          <h2>SIDMOOL</h2>
+          <p>자연주의 뷰티 화장품 브랜드, 시드물</p>
+          
+          <p><img src="images/sec2_icon_01.png"> web, app</p>
+          <p><img src="images/sec2_icon_02.png"> HTML, CSS,  JS(JQuery)</p>
+          <p><img src="images/sec2_icon_03.png"> Photoshop, illustrator, figma</p>
+          <p><img src="images/sec2_icon_04.png"> 개인프로젝트 (참여도 100%)</p>
+        </div><!--txt_box end-->
+          <!-- <h1 class="wow fadeInDown" data-wow-delay="0.2s">XFAIRE</h1>
           <p class="wow fadeInDown" data-wow-delay="0.2s">Digital streaming service</p>
-          <img class="wow fadeInUp" data-wow-delay="0.2s" data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/xfaire.jpg">
+          <img class="wow fadeInUp" data-wow-delay="0.2s" data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/xfaire.jpg"> -->
         </div>
-        <div class="slide">
-          <h1>MACHETE ENERGY</h1>
+      </div><!--cont--->
+        <div class="slide slide2 ">
+          <p>hee</p>
+          <!-- <h1>MACHETE ENERGY</h1>
           <p>Energy drink website</p>
-          <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/machete.jpg">
+          <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/machete.jpg"> -->
         </div>
-        <div class="slide">
-          <h1>PORTFOLIO</h1>
+        <div class="slide slide3">
+          <!-- <h1>PORTFOLIO</h1>
           <p>Mockup of a personal portfolio I was working on for a friend.</p>
-          <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/cascioportfolio.jpg">
+          <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/cascioportfolio.jpg"> -->
         </div>
         <div class="slide">
-          <h1>THATONEBLOG</h1>
+          <!-- <h1>THATONEBLOG</h1>
           <p>Minimalist blogging platform.</p>
-          <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/blog.jpg">
+          <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/blog.jpg"> -->
         </div>
         <div class="slide">
-          <h1>PIXBORED</h1>
+          <!-- <h1>PIXBORED</h1>
           <p>Website for sharing images and gifs.</p>
-          <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/pixbored.jpg">
+          <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/pixbored.jpg"> -->
         </div>
         <div class="slide">
-          <h1>PERSONAL WEBSITE</h1>
+          <!-- <h1>PERSONAL WEBSITE</h1>
           <p>Responsive vertical/horizontal header website theme.</p>
-          <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/personalsite.jpg">
+          <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/personalsite.jpg"> -->
         </div>
       </div>
     </div>
@@ -168,7 +186,26 @@
     <!-- begin section -->
 
         <div class="section" data-anchor="graphic">
-
+          <div class="inner">
+            <h2>GRAPHIC DESIGN</h2>
+            
+<div class="gallery_wrapper">
+  <div id="gallery_grid">
+    <img src="https://images.unsplash.com/photo-1550622349-3e3b7a29d6ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="span_1">
+    <img src="https://images.unsplash.com/photo-1550612159-5730f34e4fc0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" class="span_2">
+    <img src="https://images.unsplash.com/photo-1550658511-1ed05e6ac16c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" class="span_3">
+    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" class="span_4">
+    <img src="https://images.unsplash.com/photo-1550746566-eed1e3bc3a3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" class="span_5">
+    <img src="https://images.unsplash.com/photo-1550742101-a492319db3f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" class="span_6">
+    <img src="https://images.unsplash.com/photo-1550720590-0963d5d0d031?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" class="span_1">
+    <img src="https://images.unsplash.com/photo-1550719888-ffef4f5b476e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" class="span_2">
+    <img src="https://images.unsplash.com/photo-1550647512-8b8a24d4f646?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" class="span_3">
+    <img src="https://images.unsplash.com/photo-1550726570-5d88e3969025?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" class="span_4">
+    <img src="https://images.unsplash.com/photo-1550664255-94d114340500?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" class="span_5">
+    <img src="https://images.unsplash.com/photo-1550593802-08de396435da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt=""  class="span_6">
+  </div>
+</div>
+          </div>
         </div>
     <!-- end section -->
     <!-- begin section -->
