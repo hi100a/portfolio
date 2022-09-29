@@ -103,12 +103,14 @@ $(document).ready(function () {
         $(".header-links a").each(function () {
           $(this).css("color", "white");
         });
+        $(".nav-brand").css("filter","invert(0)");
         $(".header-links").css("background-color", "transparent");
       } else if (index != 1) {
         $(".header-links a").each(function () {
           $(this).css("color", "black");
         });
-        $(".header-links").css("background-color", "");
+        $(".header-links").css("background-color", "rgba(255, 255, 255, 0.5)");
+        $(".nav-brand").css("filter","invert(1)");
       }
 
       //using index
