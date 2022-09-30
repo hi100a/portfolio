@@ -32,7 +32,7 @@
 (function(){  
 	$("#projects .flex-slide").each(function(){  
 		$(this).hover(function(){
-			$(".flex-title").css("color", "rgb(0, 0, 0)");
+			$("#projects .flex-title").css("color", "black");
 		})
 	});
 });
