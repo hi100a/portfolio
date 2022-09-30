@@ -105,12 +105,14 @@ $(document).ready(function () {
         });
         $(".nav-brand").css("filter","invert(0)");
         $(".header-links").css("background-color", "transparent");
+        $(".bars").css("filter","invert(0)");
       } else if (index != 1) {
         $(".header-links a").each(function () {
           $(this).css("color", "black");
         });
         $(".header-links").css("background-color", "rgba(255, 255, 255, 0.5)");
         $(".nav-brand").css("filter","invert(1)");
+        $(".bars").css("filter","invert(1)");
       }
 
       //using index

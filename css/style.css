@@ -129,7 +129,6 @@ body {
 
     -webkit-font-smoothing: antialiased;
     position: fixed;
-
   }
 
   #logo-screen .close_x img{
@@ -141,6 +140,20 @@ body {
     #logo-screen .text-box{
     margin-top: 120px;
     margin-left: 70px;
+    color: #fff;
+    font-weight: 900;
+    width: 500px;
+    z-index: 5;
+  }
+  @media screen and (max-width: 1000px) {  
+    #logo-screen .text-box{
+      margin-top: 70px;
+      margin-left:10px;
+    }
+  }
+  #logo-screen .text-box .hi{
+    color: #fff;
+    font-weight: 300;
   }
   #logo-screen .name{
     color: #fff;
@@ -170,20 +183,41 @@ body {
     font-size: 8rem;
     line-height: 9rem;
     font-weight: 900;
+  }
+  #logo-screen .big a{
     color: transparent;
     -webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-color: #fff;
   }
-  #logo-screen .big:hover{
+  #logo-screen .big a:hover{
     color: #fff;    -webkit-text-stroke-width: 0px;
-
+  }
+  @media screen and (max-width: 1000px) {  
+    #logo-screen .big{
+      /* font-family : 'Gmarket';   */
+      font-size: 6rem;
+      line-height: 1em;
+      font-weight: 900;
+    }
   }
 
-  #logo-screen .text-box{
-    color: #fff;
-    font-weight: 900;
-    width: 500px;
+  @media screen and (max-width: 768px) {  
+    #logo-screen .big{
+      /* font-family : 'Gmarket';   */
+      font-size: 4rem;
+      /* line-height: 1em;
+      font-weight: 900; */
+    }
   }
+
+
+  #logo-screen .kakao_box{
+    z-index: 50;
+  }
+  #logo-screen .kakao_box .txt{
+    z-index: 50;
+  }
+
   #logo-screen .kakao_img img{
     width: 150px;
   }
@@ -192,6 +226,18 @@ body {
     bottom: -20%;
     right: -5%;
   }
+  @media screen and (max-width: 1000px) {  
+    #logo-screen .moon{
+      position: absolute;
+      bottom: -20%;
+      right: -30%;
+    }
+    #logo-screen .moon img{
+width: 80%;
+    }
+  }
+
+
   #logo-screen .moon img{
     animation-name: rotate_image;
     animation-duration: 15S;
@@ -214,6 +260,19 @@ body {
     0%{transform:translate(0,0);}
     100%{transform:translate(0,50px);}
  }  
+ @media screen and (max-width: 1000px) {  
+  #logo-screen .astronaut img{
+    width: 130px;
+  }
+}
+ @media screen and (max-width: 768px) {  
+  #logo-screen .astronaut img{
+    width: 100px;
+    top: 20%;
+    right: 10%;
+  }
+}
+
 
   /* @keyframes rotate_image{
     from{transform: perspective(); transform: rotate(-360deg);}
@@ -636,12 +695,11 @@ body {
   border-radius: 10px;
   margin-right: 10px;
 }
-.btn_a a{
+#projects .btn_a a{
   color: #fff; 
 }
-/* a{color: #fff !important ; }
-a:hover{color: #fff!important; } */
-.btn_a:hover{
+
+#projects .btn_a:hover{
   color: #fff; 
   background-color: #7ABDFF;
 }
@@ -655,7 +713,6 @@ a:hover{color: #fff!important; } */
   /* opacity: 0; */
   transform: rotate(0deg);
   top: 15%;
-
  }
 .flex-slide:hover .flex-about  {
   opacity: 1;  
@@ -668,7 +725,6 @@ a:hover{color: #fff!important; } */
 
 
  .flex-slide {  
-    
       -webkit-flex: 1; /* Safari 6.1+ */  
       -ms-flex: 1; /* IE 10 */    
       flex: 1;  
@@ -678,11 +734,15 @@ a:hover{color: #fff!important; } */
       -ms-transition: all 500ms ease;  
       -o-transition: all 500ms ease;  
       transition: all 500ms ease;  
-
  }  
+
+
  @media screen and (max-width: 768px) {  
   .flex-slide {  overflow: auto;  
   overflow-x: hidden;  }
+  /* .flex-slide::-webkit-scrollbar { 
+    display: none;
+} */
 }  
 
 
@@ -1370,15 +1430,43 @@ a:hover{color: #fff!important; } */
 
 
   /* ******************이미지 갤러리부분 */
-
+  #graphic{
+    
+  }
   #graphic .flex{
-padding: 0 70px ;
+margin: 0 70px ;
     display: flex;
     flex-direction: row;
   }
+  @media screen and (max-width: 1000px) {  
+    #graphic .flex{
+      flex-direction: column;
+    }
+  }
+  #graphic .txt_box{
+    margin: auto 0;
+  }
   #graphic .tit{
     font-weight: 900;
-
+  }
+  #graphic .btn_a{
+    margin: 0 auto;
+    width: 150px;
+    padding: 5px 10px;
+     border: 1px solid #333;
+     border-radius: 10px;
+     margin-top: 20px;
+   }
+   #graphic .btn_a a{
+     color: #333; 
+   }
+   
+   #graphic .btn_a:hover{
+     color: #fff; 
+     background-color: #7ABDFF;
+   }
+   #graphic .btn_a:hover a{
+    color: #fff; 
   }
 
   /* html,
