@@ -9,5 +9,12 @@
         })
     
     
+
+        // $('.nav-brand .bars').click(function(){
+        //     $('.nav-screen').fadeIn(200);
+        // })
+        // $('.nav-screen .close_x').click(function(){
+        //     $('.nav-screen').fadeOut(200);
+        // })
     })
     

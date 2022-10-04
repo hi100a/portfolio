@@ -97,14 +97,18 @@ body {
     height: 100%;
     z-index: 500;
     position: fixed;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.8);
     opacity: 1;
     right: -285px; /* start off behind the scenes */
     -webkit-font-smoothing: antialiased;
     position: fixed;
     width: 285px;
   }
-  
+  .nav-screen .close_x{
+    position: absolute;
+    top:20px;
+    right: 20px;
+  }
   .nav-screen .active {
     display: block;
   }
@@ -113,13 +117,17 @@ body {
 
     /* logo Screen */
     #logo-screen {
+      /* background-image: url(../images/logo-screen_back.jpg); */
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/logo-screen_back.jpg);  
+
       display: none;
       position: relative;
     height: 100%;
     width: 100%;
     z-index: 500;
     position: fixed;
-    background-image: url(../images/logo-screen_back.jpg);
+   
+  
     background-size: cover;
     opacity: 1;
     box-sizing: border-box;
@@ -138,7 +146,7 @@ body {
   }
 
     #logo-screen .text-box{
-    margin-top: 120px;
+    margin-top: 80px;
     margin-left: 70px;
     color: #fff;
     font-weight: 900;
@@ -148,7 +156,7 @@ body {
   @media screen and (max-width: 1000px) {  
     #logo-screen .text-box{
       margin-top: 70px;
-      margin-left:10px;
+      margin-left:20px;
     }
   }
   #logo-screen .text-box .hi{
@@ -214,28 +222,50 @@ body {
   #logo-screen .kakao_box{
     z-index: 50;
   }
+  #logo-screen .kakao_box .kakao_txt{
+    display: flex;
+  }
+ 
   #logo-screen .kakao_box .txt{
     z-index: 50;
   }
+  #logo-screen .kakao_box .txt a{
+    color: #fff;
+  }
+  #logo-screen .kakao_box .mail{
+    margin-top: auto;
+  }
+  @media screen and (max-width: 768px) {  
+    #logo-screen .kakao_box .mail{
+      margin-top: -15px;
+    }
+  }
+  /* #logo-screen .kakao_box .txt a:hover{
+    color: #7ABDFF;
+  } */
 
+  
   #logo-screen .kakao_img img{
     width: 150px;
   }
-  #logo-screen .moon{
-    position: absolute;
-    bottom: -20%;
-    right: -5%;
-  }
-  @media screen and (max-width: 1000px) {  
-    #logo-screen .moon{
-      position: absolute;
-      bottom: -20%;
-      right: -30%;
-    }
-    #logo-screen .moon img{
-width: 80%;
+  @media screen and (max-width: 768px) {  
+    #logo-screen .kakao_img img{
+      display: none;
     }
   }
+ 
+
+  #logo-screen .kakao_box .btn{
+   margin-top: 20px;
+}
+  #logo-screen .kakao_txt .btn_a {
+    color: #fff;
+  }
+  #logo-screen .kakao_txt .btn_a:hover {
+    color: #fff;
+    background-color: #7ABDFF;
+  }
+
 
 
   #logo-screen .moon img{
@@ -243,11 +273,26 @@ width: 80%;
     animation-duration: 15S;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+
+    position: absolute;
+    bottom: -30%;
+    right: -5%;
+    z-index: -1;
+   
   }
   @keyframes rotate_image{
     0%{transform: rotate(0deg);}
     50%{transform: rotate(180deg);}
     100%{transform: rotate(360deg);}
+  }
+
+
+  @media screen and (max-width: 768px) { 
+    #logo-screen .moon img{
+      bottom: -50%;
+      filter: brightness(0.8);
+      z-index: -2;
+    } 
   }
   #logo-screen .astronaut img{
     width: 150px;
@@ -267,9 +312,11 @@ width: 80%;
 }
  @media screen and (max-width: 768px) {  
   #logo-screen .astronaut img{
-    width: 100px;
-    top: 20%;
+    width: 75px;
+    top: 25%;
     right: 10%;
+    filter: brightness(0.8);
+    z-index: -1;
   }
 }
 
@@ -288,11 +335,13 @@ width: 80%;
     z-index: 600;
     padding: 4px;
     animation: fadeIn 1s 2s both;
-
   }
   
   .nav-brand img {
     width: 50px;
+  }
+  .nav-brand:hover img{
+    filter: invert(50%) sepia(99%) saturate(1990%) hue-rotate(185deg) brightness(110%) contrast(50%);
   }
   
   .bars {
@@ -303,6 +352,7 @@ width: 80%;
     right: 0;
     z-index: 500;
     cursor: pointer;
+    animation: fadeIn 1s 2s both;
   }
   
   .fa-times {
@@ -413,7 +463,9 @@ width: 80%;
     max-width:500px;
     padding: 1px 1px 5px 5px;
   }
-  
+  #aboutme .inner{
+    padding: 0 30px;
+  }
   .aboutme {
     background-image: url(../images/sec1_back.jpg);
     background-size:contain;
@@ -450,6 +502,11 @@ width: 80%;
     0%{transform:translate(0,0);}
     100%{transform:translate(0,50px);}
  }  
+ @media screen and (max-width: 768px) {  
+  #aboutme .astronaut img{
+    width: 75px;
+  }
+}
 
  #aboutme h2{
   font-size: 3rem;
@@ -670,6 +727,14 @@ width: 80%;
   text-align: center;
   font-weight: 900;
 }
+@media screen and (max-width: 768px) {  
+  #projects .flex-about .tit{
+    font-size: 1.5rem;
+    line-height: 1.3em;
+    margin-bottom: auto;
+    font-weight: 400;
+  }
+}
 
  .flex-about p{
   color: #fff; 
@@ -728,7 +793,7 @@ width: 80%;
       -webkit-flex: 1; /* Safari 6.1+ */  
       -ms-flex: 1; /* IE 10 */    
       flex: 1;  
-      cursor: pointer;  
+      /* cursor: pointer;   */
       -webkit-transition: all 500ms ease;  
       -moz-transition: all 500ms ease;  
       -ms-transition: all 500ms ease;  
@@ -768,7 +833,7 @@ width: 80%;
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/sec2_backimg_01.jpg);  
       background-size: cover;  
       background-position: center center;  
-      background-attachment: fixed;  
+      /* background-attachment: fixed;   */
 
  }  
  @media screen and (min-width: 768px) {  
@@ -1038,7 +1103,7 @@ width: 80%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/sec2_backimg_02.jpg);
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;	
+    /* background-attachment: fixed;	 */
   }
   .contact-form {
     width: 100%;
@@ -1053,13 +1118,13 @@ width: 80%;
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/lake-696098_1920.jpg);
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
   }
   .work {
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/sec2_backimg_03.jpg);
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
   }
   
   
@@ -1446,6 +1511,12 @@ margin: 0 70px ;
   #graphic .txt_box{
     margin: auto 0;
   }
+  @media screen and (max-width: 768px) {  
+    #graphic .txt_box{ 
+      margin-top: 70px;
+    }
+  }
+
   #graphic .tit{
     font-weight: 900;
   }
@@ -1631,3 +1702,18 @@ figure {
     height: auto;
 }
     /* ******************이미지 갤러리부분 end */
+    .modal-window{
+      position: fixed;
+      background-color: rgba(255, 255, 255, 0.5);
+      opacity: 0;
+      pointer-events: none;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+      }
+
+      .modal-window:target{
+      opacity: 1;
+      pointer-events: auto;
+      }
+[출처] [css]modal_html로 pop up 띄우기|작성자 ETERNELNATSU

@@ -45,7 +45,7 @@ $(document).ready(function () {
 
 
     // Then push them back */
-    $(".fa-times").click(function () {
+    $(".nav-screen .close_x").click(function () {
       $(".nav-screen").animate(
         {
           right: "-285px"
@@ -77,6 +77,8 @@ $(document).ready(function () {
       );
     });
   };
+  
+
 
   $(document).ready(main);
 
