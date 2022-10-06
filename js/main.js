@@ -1,4 +1,4 @@
-(function () {
+$(function () {
 	
 	// Parallax
 	var parallax = function() {
