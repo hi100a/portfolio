@@ -20,7 +20,9 @@ h3{
   font-size: 3rem;
   line-height: 1.5rem;
 }
-
+.flex{
+  display: flex;
+}
 
 /*********************header****************************/
 
@@ -73,7 +75,11 @@ h3{
 
 #clone .box.box_1{
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/sec3_screencapture_01.png);  
-  background-color: #484848;
+
+  background-size: cover;
+}
+#clone .box.box_1:hover{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/sec3_screencapture_01.png);  
   background-size: cover;
 }
 #clone .box.box_2{
@@ -81,8 +87,19 @@ h3{
   background-color: #484848;
   background-size: cover;
 }
+#clone .box.box_2:hover{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/sec3_screencapture_02.png);  
+  background-color: #484848;
+  background-size: cover;
+}
+
 #clone .box.box_3{
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/sec3_screencapture_03.png);  
+  background-color: #484848;
+  background-size: cover;
+}
+#clone .box.box_3:hover{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/sec3_screencapture_03.png);  
   background-color: #484848;
   background-size: cover;
 }
@@ -91,7 +108,13 @@ h3{
   background-color: #484848;
   background-size: cover;
 }
+#clone .box.box_4:hover{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/sec3_screencapture_04.png);  
+  background-color: #484848;
+  background-size: cover;
+}
 #clone .box:hover{
+  /* background:rgba(0, 0, 0, 0.3); */
   border-radius: 0 0 0 0;
   background-color:  rgba(0, 0, 0, 0.5);
 }
@@ -105,9 +128,9 @@ h3{
   width: 100%;
   bottom: 0;
   left: 0;
-  background-color: #333;
+  background-color:rgba(0, 0, 0, 0.9);
   color: #fff;
-  transform: translateY(100%);
+  transform: translateY(50%);
   transition: .4s;
 }
 #clone .txt_box .tit h2{
