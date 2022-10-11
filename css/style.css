@@ -310,7 +310,7 @@ body {
   
   p {
     font-size: 20px;
-    color: #484848;
+    /* color: #484848; */
   }
   
   .section {
@@ -1035,6 +1035,7 @@ body {
   color: #fff; 
 }
 
+
 #projects .btn_a:hover{
   color: #fff; 
   background-color: #7ABDFF;
@@ -1070,7 +1071,12 @@ body {
       -ms-transition: all 500ms ease;  
       -o-transition: all 500ms ease;  
       transition: all 500ms ease;  
+      -ms-overflow-style: none;
  }  
+
+ .flex-slide::-webkit-scrollbar{
+  display:none;
+}
 
 
  @media screen and (max-width: 768px) {  
@@ -1105,8 +1111,9 @@ body {
       background-size: cover;  
       background-position: center center;  
       /* background-attachment: fixed;   */
-
+  
  }  
+ 
  @media screen and (min-width: 768px) {  
   .home {  
   animation: aboutFlexSlide $defaultSeconds 1;  
@@ -1127,6 +1134,10 @@ body {
            flex-grow: 1;  
       }  
  }  
+ #projects .flex-slide  .big_tit p{
+  color: #fff;
+ }
+
  .flex-title-home {  
       @media screen and (min-width: 768px) {  
            transform: rotate(90deg);  
@@ -1149,6 +1160,7 @@ body {
            top: 15%;  
       }  
  }  
+
  .flex-about-home {  
       opacity: 0;  
       @media screen and (min-width: 768px) {  
