@@ -1,114 +1,92 @@
 
   /* portfolio section */
-  .projects .slide1{
-    background-image: url(../images/sec2_back_01.jpg);
-   }
-   .projects .slide2{
-    background-image: url(../images/sec2_back_01.jpg);
-    background-color: rgba(255 255 255 0.3);
-   }
-   .projects .txt_box{
-    text-align: left;
-    margin-left: 150px;
-   }
-   .projects .txt_box h2{
-    font-weight: 900;
-   }
-   .projects .txt_box p{
-    
-    font-weight: 900;
-   }
-  .projects .cont{
-   justify-content: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+  body{ 
+    color:#333;
+    font-family: 'Noto Sans KR', sans-serif; }
+
+#main {
+  background-image: url(../images/projects_sidmool_back.jpg);
+  width: 100%;
+  height: 70vh;
+}
+
+#main .inner{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+@media screen and (max-width: 1000px){
+  #main .inner{
+    /* display: flex; */
+    flex-direction:column;
+    /* flex-wrap: nowrap; */
   }
-  .projects .img_box{
-    position: relative;
+}
+#main .txt_box{
+  width: 40%;
+  margin-top: 200px;
+    margin-left: 10%;
+}
+@media screen and (max-width: 1000px){
+  #main .txt_box{
+    width: 100%;
+    margin-top: 100px;
+      margin-left: 10px;
   }
-  .projects .moniter img{
-    width: 500px;
-  }
-  .projects .phone{
-    position: absolute;
-    bottom: 0;
-    right: -50px;
-  }
-  .projects .phone img{
-    width: 140px;
-  }
-    /* .content {
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 800px;
-    }
-    
-    .content-slide {
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 800px;
-   
-    } */
-  
-    /* .content-slide img {
-      width: 70%;
-    } */
-    
-    .fp-controlArrow.fp-next {
-      border-color: transparent transparent transparent #9AC7FF !important;
-      right: 45px !important;
-    }
-    
-    .fp-controlArrow.fp-prev {
-      border-color: transparent #9AC7FF transparent transparent !important;
-      left: 45px !important;
-    }
-    
-    #fp-nav ul li a span,
-    .fp-slidesNav ul li a span {
-      background: rgba(0, 0, 0, 0.62) !important;
-    }
-    
-    /* contact us styles */
-    
-    .fa-paper-plane {
-      color: #484848;
-    }
-    
-    /* paper plane shake on hover */
-    
-    .plane-animated {
-      animation-duration: 6s;
-      animation-fill-mode: both;
-      animation-iteration-count: infinite;
-      animation-play-state: paused;
-    }
-    
-    .fa-paper-plane:hover {
-      /* Toggle our animation play state to running when we are hovering over our sticker */
-      animation-play-state: running;
-    }
-    
-    @keyframes shake {
-      0%,
-      100% {
-        transform: translateX(0);
-      }
-      10%,
-      30%,
-      50%,
-      70%,
-      90% {
-        transform: translateX(-10px);
-      }
-      20%,
-      40%,
-      60%,
-      80% {
-        transform: translateX(10px);
-      }
-    }
-    .shake {
-      animation-name: shake;
-    }
+}
+#main .txt_box .tit_box h2{
+  font-family : 'Gmarket';  
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.5em;
+  color: #333;
+}
+#main .txt_box .tit_box p{
+  font-weight: 700;
+  color: #333;
+  font-family: 'noto';
+}
+#main .txt_box .txt_bot{
+  margin-top: 50px;
+}
+#main .txt_box .txt_bot img{
+  height: 20px;
+  margin-right: 5px;
+}
+#main .txt_box .txt_bot p{
+ line-height: 1.7em;
+}
+#main .cont{
+  width: 600px;
+}
+
+#main .cont .mp4{
+    overflow: hidden;
+    width: 87%;
+    height: 80%;
+    transform: translate(30px, 91px);
+}
+#main .cont video{
+  width: 100%;
+  z-index: 9;
+}
+#main .cont .mockup{
+  position: relative;
+  width: 100%;
+}
+#main .cont .mockup .moniter{
+  content: '';
+  /* position: relative; */
+  position: absolute;
+  top: 13%;
+  left: 0;
+  width: 100%;
+  height: 183%;
+  background-image: url(../images/projects_Silver-Desktop-Computer-Mockup.png);
+  z-index: 10;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
