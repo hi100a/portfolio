@@ -80,6 +80,9 @@
   line-height: 1.5em;
 
 }
+@media screen and (max-width: 768px){
+  #main .txt_box .tit_box h2{ font-size: 2rem;}
+}
 
 #main .txt_box .tit_box p{
   font-weight: 700;
@@ -215,8 +218,7 @@
   color: #222;
 }
 @media screen and (max-width: 768px){
-  #info h2 {  font-size: 2.5rem;
-    margin-left: 50px;
-
+  #info h2, #info .info2 h2 {  font-size: 2.5rem;
+    margin: 50px auto;
   }
 }
