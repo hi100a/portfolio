@@ -74,7 +74,8 @@ h3{
 }
 @media screen and (max-width: 1000px){
 #clone .clone_inner {
-    flex-direction: column;}
+    flex-direction: column;
+    margin: 0 auto;}
   }
 #clone .name{ 
    width:15%;
@@ -222,9 +223,8 @@ h3{
     
   }
   #clone .name {
-    margin-top: 70px;
     width: auto;
-    margin: 0 auto;
+    margin: 70px auto 0 auto;
 }
 #clone .box_list {
   /* margin-top: 50px;

@@ -5,33 +5,70 @@
     font-family: 'Noto Sans KR', sans-serif; }
 
 #main {
+  overflow-x: hidden;
+  overflow-y: auto;
   background-image: url(../images/projects_sidmool_back.jpg);
   width: 100%;
-  height: 70vh;
+  height: 90vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+@media screen and (max-width: 1000px){
+  #main {overflow:visible;}
+}
+#main .leafs_box{
+  overflow: hidden;
+}
+#main .leafs{
+  position: absolute;
+  top: 0;
+  right: 0;
 
-#main .inner{
+}
+#main .leafs img{
+  width: 100%;
+}
+@media screen and (max-width: 1000px){
+  #main .leafs{
+    right: -66px;
+  }
+  #main .leafs img{
+    width: 70%;
+  }
+}
+@media screen and (max-width: 768px){
+  #main .leafs{
+    right: -181px;
+  }
+  #main .leafs img{
+    width: 40%;
+  }
+}
+#main .main_box{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
 }
 @media screen and (max-width: 1000px){
-  #main .inner{
+  #main .main_box{
     /* display: flex; */
     flex-direction:column;
     /* flex-wrap: nowrap; */
   }
 }
 #main .txt_box{
-  width: 40%;
+  width: 30%;
   margin-top: 200px;
     margin-left: 10%;
+    margin-right: 50px;
 }
 @media screen and (max-width: 1000px){
   #main .txt_box{
     width: 100%;
     margin-top: 100px;
-      margin-left: 10px;
+      margin-left: 10%;
   }
 }
 #main .txt_box .tit_box h2{
@@ -48,7 +85,7 @@
   font-family: 'noto';
 }
 #main .txt_box .txt_bot{
-  margin-top: 50px;
+  margin-top: 30px;
 }
 #main .txt_box .txt_bot img{
   height: 20px;
@@ -57,16 +94,52 @@
 #main .txt_box .txt_bot p{
  line-height: 1.7em;
 }
-#main .cont{
-  width: 600px;
+
+#main .btn_a{
+  width: 150px;
+  margin-top: 15px;
+  padding: 7px 15px 10px 15px;
+  line-height: 1rem;
+  background-color: #9B9B9B;
+  color: #fff;
+  border-radius: 10px;
+
+}
+#main .btn_a:hover{
+  background-color: #7ABDFF;
 }
 
-#main .cont .mp4{
-    overflow: hidden;
-    width: 87%;
-    height: 80%;
-    transform: translate(30px, 91px);
+
+
+
+
+
+#main .cont{
+  width: 800px;
+  margin-top: 80px;
+  margin-right: 140px;
 }
+@media screen and (max-width: 1300px){
+  #main .cont{
+    width: 600px;
+    margin-top: 120px;
+    margin-right: 50px;}
+}
+@media screen and (max-width: 1000px){
+  #main .cont{
+    width: 100%;
+    
+  }
+}
+#main .cont .mockup{
+  position:relative
+}
+#main .cont .mp4{
+  position: absolute;
+  width: 95.8%;
+  transform: translate(2.5%, 4%);
+}
+
 #main .cont video{
   width: 100%;
   z-index: 9;
@@ -75,8 +148,14 @@
   position: relative;
   width: 100%;
 }
+@media screen and (max-width: 1000px){
+  #main .cont .mockup{
+    width: 100%;
+  }
+}
 #main .cont .mockup .moniter{
   content: '';
+  padding-bottom: 80%;
   /* position: relative; */
   position: absolute;
   top: 13%;
@@ -89,4 +168,46 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1000px){
+  #main .cont .mockup .moniter{
+    display: none;
+  }
+}
+/* *******************sec info******* */
+
+#info{
+  margin: auto 0;
+  text-align: center;
+}
+#info img {
+  max-width: 1200px;
+  width: 100%;
+
+}
+@media screen and (max-width: 1000px){
+  #info .info1{margin-top: 300px;
+  }
+}
+@media screen and (max-width: 768px){
+  #info .info1{margin-top: 200px;
+  }
+}
+#info h2 {
+  margin-top: 200px;
+  margin-bottom: 100px;
+  margin-left: 90px;
+  font-family : 'Gmarket';  
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1.5em;
+  color: #222;
+}
+@media screen and (max-width: 768px){
+  #info h2 {  font-size: 2.5rem;
+    margin-left: 50px;
+
+  }
 }
