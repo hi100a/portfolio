@@ -5,8 +5,7 @@
     font-family: 'Noto Sans KR', sans-serif; }
 
 #main {
-  overflow-x: hidden;
-  overflow-y: auto;
+
   background-image: url(../images/projects_drmal_back.jpg);
   width: 100%;
   height: 90vh;
@@ -63,7 +62,7 @@
   width: 30%;
   margin-top: 200px;
     margin-left: 10%;
-    margin-right: 50px;
+    margin-right: 100px;
 }
 @media screen and (max-width: 1000px){
   #main .txt_box{
@@ -201,9 +200,9 @@
   }
 }
 @media screen and (max-width: 768px){
-  #info{margin-top: 200px;
+  #info{margin-top: 100px;
   }
-  #info .info1{margin-top: 200px;
+  #info .info1{margin-top: 500px;
   }
 }
 #info h2, #info .info2 h2 {

@@ -17,7 +17,7 @@ $(document).ready(function () {
   $("#holder").writeText("우주의 점에서 한 획을 그을 때까지 ");
 
   // initialize wow.js
-  new WOW().init();
+  // new WOW().init();
 
 
 
@@ -140,17 +140,17 @@ $(document).ready(function () {
   });
 
   // fullpage.js link navigation
-  $(document).on("click", "#skills", function () {
-    $.fn.fullpage.moveTo(2);
-  });
+  // $(document).on("click", "#skills", function () {
+  //   $.fn.fullpage.moveTo(2);
+  // });
 
-  $(document).on("click", "#projects", function () {
-    $.fn.fullpage.moveTo(3);
-  });
+  // $(document).on("click", "#projects", function () {
+  //   $.fn.fullpage.moveTo(3);
+  // });
 
-  $(document).on("click", "#contact", function () {
-    $.fn.fullpage.moveTo(4);
-  });
+  // $(document).on("click", "#contact", function () {
+  //   $.fn.fullpage.moveTo(4);
+  // });
 
   // smooth scrolling
   $(function () {
