@@ -107,7 +107,7 @@ h3{
 #clone .box{
   position: relative;
   width: calc(100%/2 - 30px);
-  height: 350px;
+  height: 40vh;
   margin-bottom: 30px;
   margin-right: 30px;
   box-sizing: border-box;
