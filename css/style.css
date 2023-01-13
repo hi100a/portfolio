@@ -1105,7 +1105,10 @@ body {
   background-size: cover;
   background-position: center center;}
 
-
+  .flex-slide.canya:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/sec2_backimg_04.jpg);
+    background-size: cover;
+    background-position: center center;}
 
  .flex-slide {  
       -webkit-flex: 1; /* Safari 6.1+ */  
@@ -1456,8 +1459,13 @@ body {
     background-position: center center;
     /* background-attachment: fixed; */
   }
-  
-  
+
+  .canya {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/sec2_backimg_04.jpg);
+  background-size: cover;
+  background-position: center center;
+  /* background-attachment: fixed; */
+}
   
 /* Preloader */
   .spinner {
