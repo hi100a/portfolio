@@ -327,6 +327,8 @@ body {
     font-size: 20px;
     /* color: #484848; */
   }
+
+  
   
   .section {
     text-align: center;
@@ -982,12 +984,17 @@ body {
  @media screen and (max-width: 768px) {  
   .flex-title { 
     transform: rotate(0deg) !important;
+    font-size: 2.5rem;
   }  
   .flex-slide:hover .flex-title{
     display: none;
   }
-
+  .big_tit{
+    font-size: 12px;
+  }
 }  
+
+
 
 
  .flex-about {  
